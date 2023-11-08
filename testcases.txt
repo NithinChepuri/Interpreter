@@ -1,0 +1,50 @@
+Testcase 1: Assignment_statement
+
+	input-a=6 b=16 c=86
+	output-{'a':6.0, 'b':16.0, 'c':86.0}
+
+Testcase 2: Arithmatic operation
+	
+	input- a=5+(7+8)/15
+	output-{'a':6.0}
+
+Testcase 3: Comments
+
+	input- --TEAM12
+	output-
+
+Testcase 4: if_statement
+
+	input- a=5 b=0 if a>0 then b=15 end
+	output-{'a':5, 'b':15}
+
+Testcase 5: nested if statement
+
+	input- a=5 b=0 if a>0 then b=15 if b==15 then b=8 end end 
+	output-{'a':5, 'b':8}
+
+Testcase 6: While_loop
+
+	input- a=5 b=0 while a>0 do a=a-1 b=b+1 end
+	output-{'a':0, 'b':5}
+
+---------------SYNTAX ERROR TESTCASES----------------
+Testcase 6: Arithmatic operator is missing
+
+	input- a=5(6)
+	output-Invalid Syntax
+
+Testcase 6: variable not defined
+
+	input- a=b+5
+	output- b not defined
+
+Testcase 6: syntax error in if statement
+
+	input- a=5 b=0 if a>0 b=15
+	output-Invalid Syntax (as "then" is missing)
+
+Testcase 6: Syntax error in While_loop
+
+	input- a=5 b=0 whle a>0 b=b+1
+	output-Invalid Syntax (as "do" is missing)
